@@ -11,4 +11,14 @@ color3.style.backgroundColor = "#ed6335";
 let color4 = document.getElementsByClassName('color')[3];
 color4.style.backgroundColor = "#ecae7d";
 
+function picker(){
+    const unpicker = document.querySelector('.selected')
+    unpicker.classList.remove("selected")
+    event.target.classList.add('selected')
+}
 
+
+color1.addEventListener('click', picker)
+color2.addEventListener('click', picker)
+color3.addEventListener('click', picker)
+color4.addEventListener('click', picker)
