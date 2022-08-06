@@ -10,9 +10,12 @@ color3.style.backgroundColor = "#ed6335";
 
 const color4 = document.getElementsByClassName('color')[3];
 color4.style.backgroundColor = "#ecae7d";
+
+const colorWhite = document.getElementById('clear-board').style.backgroundColor;
+
 /////////////////////////////////////////////////////////
 
-// document.querySelectorAll('.selected')[0].style.backgroundColor
+let canvaPoint = document.querySelectorAll('.pixel')
 
 
 function picker(){
@@ -35,3 +38,8 @@ function transfer(evento) {
     
 }
 
+function clearCanva(){
+    for (index = 0; index < canvaPoint.length; index++) {
+        canvaPoint[index].style.backgroundColor = colorWhite;
+    }
+}
